@@ -39,7 +39,7 @@ function logPetActivity(activity) {
   console.groupEnd();
 }
 
-(function () {
+$(function () {
   // Show the starting values, then connect each activity button to its action.
   checkAndUpdatePetInfoInHtml();
   $(".treat-button").click(clickedTreatButton);
