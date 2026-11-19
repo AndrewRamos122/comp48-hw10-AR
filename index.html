@@ -1,18 +1,22 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Care for Kirby, a virtual red-footed tortoise. Feed, play, exercise, and rest together.">
-    <meta name="theme-color" content="#f7f4eb">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Care for Kirby, a virtual red-footed tortoise. Feed, play, exercise, and rest together."
+    />
+    <meta name="theme-color" content="#f7f4eb" />
     <title>Kirby's Giga Pet</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- Load jQuery first; deferred scripts run in document order after parsing. -->
     <script
-      src="https://code.jquery.com/jquery-2.2.1.min.js"
+      src="http://code.jquery.com/jquery-2.2.1.min.js"
       integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
       crossorigin="anonymous"
-      defer></script>
+      defer
+    ></script>
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -20,7 +24,10 @@
       <header class="site-header">
         <p class="eyebrow">A little care goes a long way</p>
         <h1>Kirby's Giga Pet</h1>
-        <p class="intro">Meet Kirby. Choose an activity and see how your red-footed tortoise feels.</p>
+        <p class="intro">
+          Meet Kirby. Choose an activity and see how your red-footed tortoise
+          feels.
+        </p>
       </header>
 
       <main>
@@ -29,14 +36,20 @@
             <img
               class="pet-image"
               src="./images/red-footed turtle.jpeg"
-              alt="Kirby, a red-footed tortoise resting in the grass">
-            <p class="portrait-caption">Kirby is ready for a little adventure</p>
+              alt="Kirby, a red-footed tortoise resting in the grass"
+            />
+            <p class="portrait-caption">
+              Kirby is ready for a little adventure
+            </p>
           </div>
 
           <div class="dashboard">
             <p class="eyebrow">Pet status</p>
             <h2 id="pet-name-heading"><span class="name">Kirby</span></h2>
-            <p class="dashboard-intro">Keep Kirby feeling good with a balance of treats, play, exercise, and rest.</p>
+            <p class="dashboard-intro">
+              Keep Kirby feeling good with a balance of treats, play, exercise,
+              and rest.
+            </p>
 
             <div class="stats" aria-label="Kirby's stats">
               <div class="stat-row">
@@ -56,15 +69,43 @@
               </div>
             </div>
 
-            <p id="pet-message" class="pet-message" role="status" aria-live="polite"></p>
+            <p
+              id="pet-message"
+              class="pet-message"
+              role="status"
+              aria-live="polite"
+            ></p>
 
             <h3>Choose an activity</h3>
-            <p class="activity-hint" id="activity-hint">Every activity changes Kirby's stats.</p>
+            <p class="activity-hint" id="activity-hint">
+              Every activity changes Kirby's stats.
+            </p>
             <div class="button-container" aria-describedby="activity-hint">
-              <button class="treat-button" type="button"><span aria-hidden="true">✦</span> Treat</button>
-              <button class="play-button" type="button"><span aria-hidden="true">↗</span> Play</button>
-              <button class="exercise-button" type="button"><span aria-hidden="true">⌁</span> Exercise</button>
-              <button class="nap-button" type="button"><span aria-hidden="true">☾</span> Nap</button>
+              <button class="treat-button" type="button">
+                <span aria-hidden="true">✦</span> Treat
+              </button>
+              <button class="play-button" type="button">
+                <span aria-hidden="true">↗</span> Play
+              </button>
+              <button class="exercise-button" type="button">
+                <span aria-hidden="true">⌁</span> Exercise
+              </button>
+              <button class="nap-button" type="button">
+                <span aria-hidden="true">☾</span> Nap
+              </button>
+              <!-- This button is for demonstration purposes only. It logs an error to the console when clicked. -->
+              <button class="devtools-error-button" type="button">
+                Log error example
+              </button>
+              <button class="devtools-404-button" type="button">
+                Log 404 error example
+              </button>
+              <button class="devtools-typeerror-button" type="button">
+                Log TypeError example
+              </button>
+              <button class="devtools-violation-button" type="button">
+                Log violation example
+              </button>
             </div>
           </div>
         </section>
